@@ -1,0 +1,17 @@
+module.exports = {
+    "rules": {
+        "block-spacing": true,
+        "brace-style": "1tbs",
+        "no-constant-condition": true,
+        "no-duplicate-case": true,
+        "no-empty-character-class": true,
+        "no-extra-boolean-cast": true,
+        "no-extra-semi": true,
+        "no-multi-spaces": true,
+        "no-sparse-arrays": true,
+        "no-unexpected-multiline": true,
+        "ter-arrow-parens": true,
+        "ter-arrow-spacing": true,
+        "valid-typeof": true
+    }
+};

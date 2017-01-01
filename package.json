@@ -1,0 +1,27 @@
+{
+  "name": "@morrisallison/tslint-config",
+  "version": "0.1.0",
+  "author": "Morris Allison III <author@morris.xyz> (http://morris.xyz)",
+  "description": "A shared TSLint configuration",
+  "license": "MIT",
+  "homepage": "https://github.com/morrisallison/tslint-config",
+  "bugs": "https://github.com/morrisallison/tslint-config/issues",
+  "repository": "github:morrisallison/tslint-config",
+  "keywords": [
+    "config",
+    "configuration",
+    "lint",
+    "tslint",
+    "typescript"
+  ],
+  "dependencies": {
+    "tslint-eslint-rules": "^3.2.3",
+    "tslint-microsoft-contrib": "^4.0.0",
+    "vrsource-tslint-rules": "^4.0.0"
+  },
+  "peerDependencies": {
+    "tslint": "^4.2.0",
+    "typescript": "^2.1.4"
+  },
+  "main": "index.js"
+}
