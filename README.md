@@ -10,7 +10,7 @@ A shared TSLint configuration.
 
 [badge-bithound]: https://img.shields.io/bithound/dependencies/github/morrisallison/tslint-config.svg?style=flat-square
 [badge-license]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
-[badge-npm]: https://img.shields.io/npm/v/tslint-config.svg?style=flat-square
+[badge-npm]: https://img.shields.io/npm/v/@morrisallison/tslint-config.svg?style=flat-square
 [badge-tslint]: https://img.shields.io/badge/TSLint-v4.2-blue.svg?style=flat-square
 [badge-typescript]: https://img.shields.io/badge/TypeScript-v2.1-blue.svg?style=flat-square
 [bitHound]: https://bithound.io/github/morrisallison/tslint-config
