@@ -21,16 +21,16 @@ A shared TSLint configuration.
 
 ## Installation
 
-Node.js via [npm][npmjs]
-
-```bash
-npm install @morrisallison/tslint-config --save-dev
-```
-
 Node.js via [Yarn][yarnpkg]
 
 ```bash
 yarn add -D @morrisallison/tslint-config
+```
+
+Node.js via [npm][npmjs]
+
+```bash
+npm install @morrisallison/tslint-config --save-dev
 ```
 
 [npmjs]: https://www.npmjs.com/
