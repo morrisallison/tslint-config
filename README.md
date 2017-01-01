@@ -19,6 +19,23 @@ A shared TSLint configuration.
 [tslint]: https://github.com/palantir/tslint
 [typescript]: https://github.com/Microsoft/TypeScript
 
+## Installation
+
+Node.js via [npm][npmjs]
+
+```bash
+npm install @morrisallison/tslint-config --save-dev
+```
+
+Node.js via [Yarn][yarnpkg]
+
+```bash
+yarn add -D @morrisallison/tslint-config
+```
+
+[npmjs]: https://www.npmjs.com/
+[yarnpkg]: https://yarnpkg.com/
+
 ## Usage
 
 Create a file in the project root named `tslint.json` containing the following:
