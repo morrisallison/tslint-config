@@ -1,4 +1,4 @@
-module.exports = {
+{
     "rules": {
         "block-spacing": true,
         "brace-style": "1tbs",
@@ -14,4 +14,4 @@ module.exports = {
         "ter-arrow-spacing": true,
         "valid-typeof": true
     }
-};
+}

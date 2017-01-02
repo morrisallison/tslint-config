@@ -1,4 +1,4 @@
-module.exports = {
+{
     "rules": {
         "ext-variable-name": [
             true,
@@ -15,4 +15,4 @@ module.exports = {
         "no-duplicate-imports": true,
         "prefer-literal": [true, "object", "function", "array"]
     }
-};
+}
