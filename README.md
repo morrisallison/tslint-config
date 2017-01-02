@@ -42,13 +42,7 @@ Create a file in the project root named `tslint.json` containing the following:
 
 ```json
 {
-    "extends": "@morrisallison/tslint-config",
-    "rulesDirectory": [
-        "node_modules/@morrisallison/tslint-config/rules",
-        "node_modules/tslint-eslint-rules/dist/rules",
-        "node_modules/tslint-microsoft-contrib",
-        "node_modules/vrsource-tslint-rules/rules"
-    ]
+    "extends": "@morrisallison/tslint-config"
 }
 ```
 

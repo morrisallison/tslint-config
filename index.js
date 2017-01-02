@@ -1,29 +1,42 @@
-var msRecommended = require('tslint-microsoft-contrib/recommended_ruleset');
+'use strict';
 
-var tslintEslint = require('./rulesets/tslint-eslint-rules');
-var vrsource = require('./rulesets/vrsource-tslint-rules');
+const msRecommended = require('tslint-microsoft-contrib/recommended_ruleset');
+const path = require('path');
 
-var overrides = {
-    'curly': false,
-    'function-name': false,
-    'interface-name': false,
-    'missing-jsdoc': false,
-    'no-any': false,
-    'no-for-in-array': false,
-    'no-increment-decrement': false,
-    'no-multiline-string': false,
-    'no-relative-imports': false,
-    'no-single-line-block-comment': false,
-    'one-variable-per-declaration': false,
-    'ordered-imports': false,
-    'prefer-array-literal': false,
-    'restrict-plus-operands': false,
-    'trailing-comma': false,
+const overrides = require('./rulesets/overrides');
+const tslintEslint = require('./rulesets/tslint-eslint-rules');
+const vrsource = require('./rulesets/vrsource-tslint-rules');
+
+function makeRules() {
+    const rules = Object.assign(
+        {},
+        msRecommended.rules,
+        tslintEslint.rules,
+        vrsource.rules,
+        overrides.rules
+    );
+
+    // Hide annoying deprecated message
+    delete rules['no-unused-variable'];
+
+    return rules;
+}
+
+function getDirectories() {
+    const customRulesDirectory = path.resolve(__dirname, 'rules');
+    const msRulesDirectory = path.resolve(require.resolve('tslint-microsoft-contrib'), '..');
+    const eslintRulesDirectory = path.resolve(require.resolve('tslint-eslint-rules'), '../dist/rules');
+    const vrsourceRulesDirectory = path.resolve(require.resolve('vrsource-tslint-rules/tslint.json'), '../rules');
+
+    return [
+        customRulesDirectory,
+        msRulesDirectory,
+        eslintRulesDirectory,
+        vrsourceRulesDirectory,
+    ];
+}
+
+module.exports = {
+    rules: makeRules(),
+    rulesDirectory: getDirectories(),
 };
-
-var rules = Object.assign({}, msRecommended.rules, tslintEslint.rules, vrsource.rules, overrides);
-
-// Hide annoying deprecated message
-delete rules['no-unused-variable'];
-
-module.exports = { rules: rules };
