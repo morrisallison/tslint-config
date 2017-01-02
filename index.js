@@ -1,3 +1,5 @@
+'use strict';
+
 var msRecommended = require('tslint-microsoft-contrib/recommended_ruleset');
 
 var tslintEslint = require('./rulesets/tslint-eslint-rules');
