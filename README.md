@@ -1,5 +1,7 @@
 # tslint-config
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/morrisallison/tslint-config.svg)](https://greenkeeper.io/)
+
 A shared TSLint configuration.
 
 [![npm Version][badge-npm]][npm]
